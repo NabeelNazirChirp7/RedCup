@@ -1,0 +1,6 @@
+framework module Pods_RedCup {
+  umbrella header "Pods-RedCup-umbrella.h"
+
+  export *
+  module * { export * }
+}

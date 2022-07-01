@@ -1,0 +1,22 @@
+PODS:
+  - FlagPhoneNumber (0.8.0):
+    - FlagPhoneNumber/libPhoneNumberiOS (= 0.8.0)
+  - FlagPhoneNumber/libPhoneNumberiOS (0.8.0)
+  - PinCodeTextField (0.1.0)
+
+DEPENDENCIES:
+  - FlagPhoneNumber
+  - PinCodeTextField
+
+SPEC REPOS:
+  trunk:
+    - FlagPhoneNumber
+    - PinCodeTextField
+
+SPEC CHECKSUMS:
+  FlagPhoneNumber: 3712455b95f66cb0f2016fef7d9e34cddf8c7f9a
+  PinCodeTextField: a3c39be58bde3ed1d6888d0fb1d88b0a4a2277cc
+
+PODFILE CHECKSUM: e789be13f38eb11ce334df36cb416caa7cddf74c
+
+COCOAPODS: 1.11.2
