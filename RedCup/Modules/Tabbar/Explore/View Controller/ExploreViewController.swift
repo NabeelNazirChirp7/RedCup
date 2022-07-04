@@ -74,6 +74,55 @@ extension ExploreViewController: UICollectionViewDelegate, UICollectionViewDataS
         
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        if let popupView = view.viewWithTag(CustomTags.GENERIC_POPUP) {
+            popupView.removeFromSuperview()
+        }
+        
+        if indexPath.item == 0 {
+            return
+        }
+        
+        guard let cell = collectionView.cellForItem(at: indexPath) else { return }
+        
+        let popup: GenericFilterPopup = .fromNib()
+        popup.tag = CustomTags.GENERIC_POPUP
+        popup.dropShadow()
+        
+        let cellPoint = collectionView.convert(cell.frame, to: view).origin
+        let totalWidth = view.frame.width
+        
+        if indexPath.item == 1 {
+            popup.titles = ["2 miles", "3 miles", "5 miles"]
+        } else if indexPath.item == 2 {
+            popup.titles = ["Greek life", "College", "Bar/Rest.", "Club"]
+        } else if indexPath.item == 3 {
+            popup.titles = ["Relevance", "Date"]
+        }
+        popup.setupView()
+        
+        view.addSubview(popup)
+        
+        popup.translatesAutoresizingMaskIntoConstraints = false
+        
+        if cellPoint.x + 150 + 10 < totalWidth { // cell's starting point + view width + trailing threshold
+            popup.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: cellPoint.x).isActive = true
+        } else if cellPoint.x - 150 - 10 > 0 {
+            let cellEndpoint = cell.frame.width + cellPoint.x
+            popup.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: cellEndpoint - 150).isActive = true
+        }
+        let topInsets = cellPoint.y + collectionView.frame.height + 10
+        popup.topAnchor.constraint(equalTo: view.topAnchor, constant: topInsets).isActive = true
+        popup.widthAnchor.constraint(equalToConstant: 150).isActive = true
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if let popupView = view.viewWithTag(CustomTags.GENERIC_POPUP) {
+            popupView.removeFromSuperview()
+        }
+    }
 }
 
 // MARK: - Tableview delegate and Datasource

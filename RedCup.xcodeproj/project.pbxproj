@@ -75,6 +75,8 @@
 		4AF96ABA2873085C0038A068 /* PeopleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AF96AB82873085C0038A068 /* PeopleCollectionViewCell.xib */; };
 		4AF96ABD287309630038A068 /* PeopleListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF96ABB287309630038A068 /* PeopleListingTableViewCell.swift */; };
 		4AF96ABE287309630038A068 /* PeopleListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AF96ABC287309630038A068 /* PeopleListingTableViewCell.xib */; };
+		4AF96AC228730D320038A068 /* GenericFilterPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AF96AC128730D320038A068 /* GenericFilterPopup.xib */; };
+		4AF96AC428730D430038A068 /* GenericFilterPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF96AC328730D430038A068 /* GenericFilterPopup.swift */; };
 		88A8AD7A9B35DA48A321BA85 /* Pods_RedCup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B8468381DB67182DF4A3686 /* Pods_RedCup.framework */; };
 /* End PBXBuildFile section */
 
@@ -150,6 +152,8 @@
 		4AF96AB82873085C0038A068 /* PeopleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleCollectionViewCell.xib; sourceTree = "<group>"; };
 		4AF96ABB287309630038A068 /* PeopleListingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListingTableViewCell.swift; sourceTree = "<group>"; };
 		4AF96ABC287309630038A068 /* PeopleListingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleListingTableViewCell.xib; sourceTree = "<group>"; };
+		4AF96AC128730D320038A068 /* GenericFilterPopup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericFilterPopup.xib; sourceTree = "<group>"; };
+		4AF96AC328730D430038A068 /* GenericFilterPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericFilterPopup.swift; sourceTree = "<group>"; };
 		9B8468381DB67182DF4A3686 /* Pods_RedCup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RedCup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC083C010409A7A83460971 /* Pods-RedCup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedCup.debug.xcconfig"; path = "Target Support Files/Pods-RedCup/Pods-RedCup.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -411,6 +415,7 @@
 		4AA6726D286ECC2B0026DA20 /* RedCup */ = {
 			isa = PBXGroup;
 			children = (
+				4AF96ABF28730D020038A068 /* General */,
 				4AA67286286ECD0F0026DA20 /* Modules */,
 				4AA67285286ECCE40026DA20 /* Storyboards */,
 				4AA67282286ECC9F0026DA20 /* Supporting Files */,
@@ -580,6 +585,23 @@
 			path = "View Controller";
 			sourceTree = "<group>";
 		};
+		4AF96ABF28730D020038A068 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				4AF96AC028730D090038A068 /* Popup */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		4AF96AC028730D090038A068 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				4AF96AC128730D320038A068 /* GenericFilterPopup.xib */,
+				4AF96AC328730D430038A068 /* GenericFilterPopup.swift */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
 		85653D1E9875064B337FE36A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -687,6 +709,7 @@
 				4AA6728E286ED0A40026DA20 /* Poppins-Medium.ttf in Resources */,
 				4A183FFE286ED620001C0B08 /* PostNoBillsJaffna-Regular.ttf in Resources */,
 				4A828FDD2872CDE300B8F90F /* SideMenu.xcassets in Resources */,
+				4AF96AC228730D320038A068 /* GenericFilterPopup.xib in Resources */,
 				4AF96ABA2873085C0038A068 /* PeopleCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -766,6 +789,7 @@
 				4AC538192872EFC400F97AD0 /* EventHeader.swift in Sources */,
 				4AC538202872F41E00F97AD0 /* HorizontalEventItemCollectionViewCell.swift in Sources */,
 				4AB8B1CC286EDFD200E3A38C /* StoryboardExtension.swift in Sources */,
+				4AF96AC428730D430038A068 /* GenericFilterPopup.swift in Sources */,
 				4AF96ABD287309630038A068 /* PeopleListingTableViewCell.swift in Sources */,
 				4A0BAD2D2872DF0B0065C7FE /* ExploreViewModel.swift in Sources */,
 				4A184007286EDA69001C0B08 /* GetStartedViewController.swift in Sources */,

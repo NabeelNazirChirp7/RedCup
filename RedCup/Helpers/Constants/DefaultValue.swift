@@ -13,3 +13,7 @@ class DefaultValue {
     static let double = 0
     static let bool = false
 }
+
+class CustomTags {
+    static let GENERIC_POPUP = 100
+}
