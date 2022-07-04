@@ -3,20 +3,24 @@ PODS:
     - FlagPhoneNumber/libPhoneNumberiOS (= 0.8.0)
   - FlagPhoneNumber/libPhoneNumberiOS (0.8.0)
   - PinCodeTextField (0.1.0)
+  - SideMenu (6.5.0)
 
 DEPENDENCIES:
   - FlagPhoneNumber
   - PinCodeTextField
+  - SideMenu
 
 SPEC REPOS:
   trunk:
     - FlagPhoneNumber
     - PinCodeTextField
+    - SideMenu
 
 SPEC CHECKSUMS:
   FlagPhoneNumber: 3712455b95f66cb0f2016fef7d9e34cddf8c7f9a
   PinCodeTextField: a3c39be58bde3ed1d6888d0fb1d88b0a4a2277cc
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
 
-PODFILE CHECKSUM: e789be13f38eb11ce334df36cb416caa7cddf74c
+PODFILE CHECKSUM: 01d0e9f9fade03faa66764d87b5e6a856e536de2
 
 COCOAPODS: 1.11.2

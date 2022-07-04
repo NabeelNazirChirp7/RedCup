@@ -6,7 +6,8 @@ target 'RedCup' do
   use_frameworks!
 
   # Pods for RedCup
-  pod "FlagPhoneNumber"
+  pod 'FlagPhoneNumber'
   pod 'PinCodeTextField'
+  pod 'SideMenu'
 
 end

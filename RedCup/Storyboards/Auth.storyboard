@@ -209,6 +209,7 @@ Live life to its fullest</string>
                             <constraint firstItem="BFG-2j-NKp" firstAttribute="bottom" secondItem="XOE-uX-bM7" secondAttribute="bottom" constant="40" id="zoY-bB-scj"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="cOe-HE-6N1"/>
                     <connections>
                         <outlet property="descriptionLbl" destination="DMk-rE-a8R" id="fHB-1d-soN"/>
                         <outlet property="nextBtn" destination="B94-Vn-f2i" id="qKV-md-nxZ"/>

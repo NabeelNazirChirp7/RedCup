@@ -19,4 +19,5 @@ extension UIStoryboard {
 enum StroyboardEnum: String {
     case auth = "Auth"
     case setupAccount = "SetupAccount"
+    case sideMenu = "SideMenu"
 }
