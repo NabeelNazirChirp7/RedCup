@@ -13,4 +13,5 @@ extension UIColor {
     static let darkRedGradient = UIColor(named: "DarkRedGradient")
     static let primaryRed = UIColor(named: "PrimaryRed")
     static let secondaryTextColor = UIColor(named: "SecondaryTextColor")
+    static let blackBG = UIColor(named: "BlackBG")
 }

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PeopleCollectionViewCell" customModule="RedCup" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cix-aa-lPa">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="120"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="acB-jt-lx9">
+                                <rect key="frame" x="10" y="10" width="140" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="People" translatesAutoresizingMaskIntoConstraints="NO" id="pvw-D8-T5e">
+                                        <rect key="frame" x="46" y="0.0" width="48" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="pvw-D8-T5e" secondAttribute="height" multiplier="1:1" id="Oyg-c3-G2O"/>
+                                            <constraint firstAttribute="width" constant="48" id="ebB-RQ-sBD"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Wick" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VF8-DG-2C6">
+                                        <rect key="frame" x="36" y="53" width="68.5" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="13"/>
+                                        <color key="textColor" name="PrimaryTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="2 Upcoming Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VrZ-os-s6I">
+                                        <rect key="frame" x="7" y="76.5" width="126" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="13"/>
+                                        <color key="textColor" name="PrimaryTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="LightGrayBGColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="acB-jt-lx9" secondAttribute="bottom" constant="10" id="qhl-VV-iN0"/>
+                            <constraint firstItem="acB-jt-lx9" firstAttribute="top" secondItem="cix-aa-lPa" secondAttribute="top" constant="10" id="uEV-pO-cee"/>
+                            <constraint firstItem="acB-jt-lx9" firstAttribute="leading" secondItem="cix-aa-lPa" secondAttribute="leading" constant="10" id="y7i-9G-yB3"/>
+                            <constraint firstAttribute="trailing" secondItem="acB-jt-lx9" secondAttribute="trailing" constant="10" id="z7a-3J-6Nk"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cix-aa-lPa" secondAttribute="bottom" id="9HW-GH-wH9"/>
+                <constraint firstItem="cix-aa-lPa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XyK-FG-ufw"/>
+                <constraint firstAttribute="trailing" secondItem="cix-aa-lPa" secondAttribute="trailing" id="dW2-Yg-GPn"/>
+                <constraint firstItem="cix-aa-lPa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kfP-uK-aut"/>
+            </constraints>
+            <point key="canvasLocation" x="141" y="145"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="People" width="48" height="48"/>
+        <namedColor name="LightGrayBGColor">
+            <color red="0.38823529411764707" green="0.38823529411764707" blue="0.38823529411764707" alpha="0.30000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PrimaryTextColor">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
